@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #ffffff;
+    color: #5a5a5a;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    
+}
+
+/* --------------------------------------------------------------------
+--------------------- HEADER ------------------------------- */
+
+.logo{
+    width: 350px;
+    float: left;
+    margin-left: 30px;
+    margin-top: -2px;
+
+}
+
+.main-nav
+{
+    float: right;
+    list-style: none; 
+    margin-right: 70px;
+    margin-top: 20px;
+}
+
+.main-nav li {
+    display: inline-block; 
+    margin-right: 30px;    
+}
+
+.main-nav li a {
+    text-decoration: none; 
+    color: #B3B6B7;
+    font-size: 110%;
+    font-weight: 700px;
+    transition: border-bottom 0.15s; 
+    padding: 2px 0; 
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #f17908;
+}
+
+.button{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 80px;    
+    display: inline-block;
+    text-align: center; 
+    transition: all .3s;
+    font-weight: 1000;
+    
+}
+
+.button:hover{
+    background-color: #d35400;
+}
+
+
+
+.clearfix::after{
+    content:" ";
+    display: table;
+    clear: both;
+}
+
+header{
+    background-image: linear-gradient( to bottom,rgba(45, 95, 93,0.85),rgba(2, 33, 64,0.8)) ,url(../Img/background-header.jpg);
+    background-size: cover; 
+    background-position: center;    
+    height:100vh;
+    background-attachment: fixed;
+}   
+
+.row{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-main-box{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-45%, -55%); 
+    width: 1140px;   
+}
+
+
+h1{
+    font-size: 300%;
+    font-weight: 400;
+    word-spacing: 5px;
+    color: rgb(216, 216, 6);
+    line-height: 135%;
+    margin-bottom: 40px;
+    margin-top: 100px;    
+} 
+
+h1,h2,h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn{
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px; 
+    border-radius: 16px;
+    margin: 10px;
+    width: 190px;
+    display: inline-block;
+    text-align: center; 
+    transition: all .3s;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d35400; 
+}
+
+
+/* --------------------------------------------------------------------
+--------------------- ABOUT SECTION ------------------------------- */
+
+.about-picture img{
+    width: 90%;    
+    border-radius: 20px;
+    border: 4px solid #5191cc;
+    box-shadow: 0px 5px 15px 5px ;
+    
+    transition: all .3s;
+}
+
+.about-picture{
+    position: relative;
+}
+
+h2{
+    text-align: center;
+    color: #ee8427;
+    font-size: 180%;
+    font-weight: 700;
+}
+
+h2::after{
+    content:" ";
+    display: block;
+    width: 175px;
+    height: 3px;
+    background-color: #f77606;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+.p-long{
+    text-align: center; 
+    color: #215f99;
+    font-size: 22px;
+    margin-bottom: 70px;
+    margin-top: 40px;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+}
+
+section{
+    padding: 50px;
+}
+
+.picture-title{
+    position: absolute;
+    top: 50%;   
+    left: 50%;
+    color: #ecf0f3;
+    transform: translate(-52%,100%);
+    opacity: 0; 
+    transition: all .3s; 
+    font-weight: bold;
+    font-size: large;
+}   
+
+.about-picture:hover img,
+.about-picture:active img{
+    filter: brightness(55%) blur(2px); 
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title{
+    transform: translate(-52%,-60%);
+    opacity: 1;
+}
+
+
+/* --------------------------------------------------------------------
+--------------------- PRODUCT SECTION ------------------------------- */
+.course-section{
+    background-color: #f4f4f4;
+}
+
+.course-section h2{
+    margin-bottom: 60px;
+}
+
+.course-box{
+    background-color: #eeefff;
+    width: 90%;
+    height: 350px;
+    box-shadow: 5px 15px 15px #e0e0e0;
+}
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #265077;
+    color: white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.course-box li{
+    list-style: none;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.course-price{
+    font-size: 250%;
+    color:#265077;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.course-price span{
+    font-size: 80%;
+}
+
+.small-icon{
+    color: #305679;
+    font-size: 130%;
+    margin-right: 10px;
+}
+
+.course-box .btn{
+    margin-left: 20%;
+}
+
+/* --------------------------------------------------------------------
+--------------------- REVIEW SECTION ------------------------------- */
+.review-section{
+    background-image: linear-gradient( to bottom,rgba(45, 95, 93,0.85),rgba(2, 33, 64,0.8)) ,url(../Img/background4.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.review-section h2{
+    margin-bottom: 70px;
+}
+
+blockquote::before{
+    content: '\201C';
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+blockquote{
+    width: 95%;
+    position: relative;
+    font-style: italic;
+    line-height: 140%;
+    color: white;
+}
+
+cite{
+    display: block;
+    color:#3f7ab1;
+    margin-top: 15px;
+}
+
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #265077;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+ .login-form-container{
+    position: fixed;
+    top:-105%; left:0;
+    height:100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    z-index: 10000;
+}
+
+.login-form-container.active{
+    top:0;
+} 
+
+.login-form-container form{
+    margin:2rem;
+    text-align: center;
+    padding:2rem;
+    width:600px;
+    border-radius: .5rem;
+    box-shadow:rgba(2, 33, 64,1);
+    border: 2px solid #f18826;
+    background: #fff;
+}
+
+.login-form-container form .buttons{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+}
+
+.login-form-container form .btn{
+    display: block;
+    width:100%;
+    margin:.5rem 0;
+}
+
+.login-form-container form .box{
+    margin:.7rem 0;
+    width: 100%;
+    font-size: 1.6rem;
+    color:var(--black);
+    text-transform: none;
+    /* border:var(--border); */
+    padding:1rem 1.2rem;
+    border-radius: .5rem;
+}
+
+.login-form-container form p{
+    padding:1rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+}
+
+.login-form-container form p a{
+    color:orange;
+    text-decoration: underline;
+}
+
+.login-form-container form h3{
+    padding-bottom:1rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.login-form-container #close-login-form{
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 50px;
+    color:black;
+    cursor: pointer;
+} 
+
+.login-form-container .btn
+{
+    font-weight: 50000;
+}
+
